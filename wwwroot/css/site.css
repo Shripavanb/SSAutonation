@@ -132,8 +132,15 @@ img {
 .ss-brand {
     display: inline-flex;
     align-items: center;
-    gap: 12px;
-    color: var(--ss-dark) !important;
+    text-decoration: none;
+}
+
+.ss-logo {
+    display: block;
+    width: auto;
+    height: 76px;
+    max-width: 220px;
+    object-fit: contain;
 }
 
 .ss-brand-main {
@@ -614,17 +621,6 @@ main {
 }
 
 
-@media (max-width: 480px) {
-
-    .ss-brand-text small {
-        font-size: 8px;
-        letter-spacing: 0.8px;
-    }
-
-    .ss-topbar-left span {
-        font-size: 11px;
-    }
-}
 
 .ss-footer-bottom-inner {
     display: grid;
@@ -666,7 +662,24 @@ main {
         .ss-footer-legal a:hover {
             color: var(--ss-red);
         }
+@media (max-width: 480px) {
 
+    .ss-brand-text small {
+        font-size: 8px;
+        letter-spacing: 0.8px;
+    }
+
+    .ss-topbar-left span {
+        font-size: 11px;
+    }
+}
+
+@media (max-width: 768px) {
+    .ss-logo {
+        height: 44px;
+        max-width: 190px;
+    }
+}
 @media (max-width: 768px) {
     .ss-footer-bottom-inner {
         grid-template-columns: 1fr;
